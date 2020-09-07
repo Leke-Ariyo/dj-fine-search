@@ -1,9 +1,10 @@
 long_description = """
 # Django Fine Search
 
-https://github.com/bellomusodiq/dj-fine-search
 
-https://pypi.org/project/dj-fine-search/
+## Code URL: https://github.com/bellomusodiq/dj-fine-search
+
+## Pip URL: https://pypi.org/project/dj-fine-search/
 
 
 Django fine search is package that performs search based on keywords. It allows word flexibility
@@ -55,11 +56,16 @@ queryset = [{"id": 1, "title": "some title", "text": "hello world, how are you"}
 it is also possible to perform search on queryset. e.g. queryset that has been filter initialy
 
 ~~~
+USAGE
+
+# importing the package
 from fine_search.fine_search import perform_search_queryset
 
+# getting the queryset
 q = MyModel.objects.all()
 
-queryset = perform_serach_queryset(queryset=q, search_text='hello world', fields=["title", "text"])
+# getting the result
+queryset = perform_search_queryset(queryset=q, search_text='hello world', fields=["title", "text"])
 ~~~
 
 """
